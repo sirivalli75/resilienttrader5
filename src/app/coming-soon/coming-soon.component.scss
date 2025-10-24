@@ -1,0 +1,94 @@
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/assets/images/backgroundpic.jpg') no-repeat center center / cover;
+
+  h1 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-in-out;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 15px;
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      background: #f49520d5;
+      color: #1e3c72;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #ffd633;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  background: #5ab5d9c3;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  letter-spacing: 1px;
+
+  p {
+    margin :0;
+  }
+}
